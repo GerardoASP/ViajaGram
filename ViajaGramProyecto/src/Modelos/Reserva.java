@@ -18,6 +18,8 @@ public class Reserva {
     private boolean estadoReserva;
     private float importe;
     private Date fechaSalida;
+    private Hotel hotel;
+    private Usuario usu;
     
     //Constructor Por Defecto
     public Reserva(){
@@ -25,13 +27,17 @@ public class Reserva {
     }
     
     //Constructor Parametrizado
-    public Reserva(Date fechaEntrada,int numeroNoches,boolean estadoReserva,float importe,Date fechaSalida){
+
+    public Reserva(Date fechaEntrada, int numeroNoches, boolean estadoReserva, float importe, Date fechaSalida, Hotel hotel, Usuario usu) {
         this.fechaEntrada = fechaEntrada;
         this.numeroNoches = numeroNoches;
         this.estadoReserva = estadoReserva;
         this.importe = importe;
         this.fechaSalida = fechaSalida;
+        this.hotel = hotel;
+        this.usu = usu;
     }
+    
     
     //Getters And Setters Clase Reserva
 
@@ -74,5 +80,22 @@ public class Reserva {
     public void setFechaSalida(Date fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
+
+    public Usuario getUsu() {
+        return usu;
+    }
+
+    public void setUsu(Usuario usu) {
+        this.usu = usu;
+    }
+    
     
 }
