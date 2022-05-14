@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author GERARDO SANCHEZ
  */
-public class Hotel {
+public class Hotel extends Usuario{
     //Atributos de la clase
     public String nombreHotel;
     public int categoriaHotel;
@@ -23,11 +23,14 @@ public class Hotel {
     
     //Constructor por defecto
     public Hotel() {
+        super();
         listadoHabitaciones = new ArrayList<>();
     }
     
     //Constructor Parametrizado
-    public Hotel(String nombreHotel, int categoriaHotel, String localidad, String direccionHotel, String numeroTelefono, String descripcion) {
+
+    public Hotel(String nombreHotel, int categoriaHotel, String localidad, String direccionHotel, String numeroTelefono, String descripcion, String nombreUsuario, String contrasenaUsuario, String tipoUsuario) {
+        super(nombreUsuario, contrasenaUsuario, tipoUsuario);
         this.nombreHotel = nombreHotel;
         this.categoriaHotel = categoriaHotel;
         this.localidad = localidad;
@@ -36,6 +39,7 @@ public class Hotel {
         this.descripcion = descripcion;
         listadoHabitaciones = new ArrayList<>();
     }
+    
     
     //Getters And Setters Clase Hotel
     public String getNombreHotel() {
