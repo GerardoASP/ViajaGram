@@ -8,7 +8,7 @@ package viajagramproyecto;
 /**
  *
  * @author GERARDO SANCHEZ
- * version 1.0.6
+ * version 1.0.7
  */
 public class ViajaGramProyecto {
 
