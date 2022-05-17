@@ -5,10 +5,12 @@
  */
 package viajagramproyecto;
 
+//import Vistas.Menu;
+
 /**
  *
  * @author GERARDO SANCHEZ
- * version 1.0.8
+ * version 1.0.9
  */
 public class ViajaGramProyecto {
 
@@ -17,6 +19,7 @@ public class ViajaGramProyecto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Menu.main(args);
     }
     
 }
